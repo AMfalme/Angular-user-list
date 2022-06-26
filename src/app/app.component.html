@@ -8,48 +8,57 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
+  body {
+    margin: 0;
+  }
 
-    body{
-      margin: 0;
-    }
+
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {}
+
+</style>
+
+<!-- Toolbar -->
+<div class="content">
+  <mat-toolbar color="primary">
+    <mat-icon>home</mat-icon>
     
-      
-    
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-     
-      /* Responsive Styles */
-      @media screen and (max-width: 767px) {
-      }
-    </style>
-    
-    <!-- Toolbar -->
-    <div class="content">
-     
-    
-      <div>
-        <h4 class="logIn">
-          List of users
-        </h4>
-        <div class="">
-    
-        </div>
-      </div>
-      <title>Home loan - Swedbank </title>
-    
-    
-    </div>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-    <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-    <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-    <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-    <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-    
-    <router-outlet></router-outlet>
-    
+  </mat-toolbar>
+  
+  <div class="user-list">
+    <mat-card class="example-card">
+      <mat-card-title-group>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Medium</mat-card-subtitle>
+        <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+      </mat-card-title-group>
+      <mat-card-content>
+        `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+        from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+        originally bred for hunting.`
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <title>Home loan - Swedbank </title>
+
+
+</div>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
